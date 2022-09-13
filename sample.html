@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="custom.css">
+    <script>
+        document.write("Injecting text using JavaScript");
+        document.write("<h1>Learning JavaScript<h1>")
+
+    </script>
+</head>
+
+<body>
+    <h1 class="hdg">JavaScript Methods & Events</h1>
+    <p id="randTxt" title="random text">
+        we are discussing about various events and methods of JavaScript
+    </p>
+    <h2 class="hdg">Document Object Understanding</h2>
+    <h2 class="hdg">JS Events Understanding</h2>
+
+
+    <button onclick="changeHdgStyle()">Change Heading Style</button>
+    <div style="margin-top:20px">
+        <select id="cities" onchange="selctedCity()">
+            <option value="chn">Chennai</option>
+            <option value="blr">Bengaluru</option>
+            <option value="hyd">Hyderabad</option>
+            <option value="del">Delhi</option>
+        </select> <br />
+        Selected City: <span id="slctVal"></span>
+    </div>
+    <div>
+        <button id="btnSubmit" onclick="changeHdgStyle()" onmouseover="mouseOverActn()"
+            onmouseout="mouseOutActn()">Submit</button>
+    </div>
+    <div>
+        <input type="text" id="nmTxt" name="Name" onkeypress="keyPressActn()">
+        <p id="txt">Value entered: </p>
+    </div>
+    <div>
+        <button onclick="getInpVal()">Get Value</button>
+        <input type="text" id="lastNm">
+    </div>
+    <button onclick="enterName('Raja','Kumar')">Submit</button>
+    <div>
+        Number 1:<input type="text" id="num1"><br />
+        Number 2:<input type="text" id="num2"><br />
+
+        <button onclick="calculator('add')">Add</button><br />
+        <button onclick="calculator('sub')">Sub</button><br />   
+        <button onclick="calculator('mul')">Mul</button><br />
+        <button onclick="calculator('div')">Div</button><br />
+        Result:<input type="text" id="resInp">
+    </div>
+
+
+<div>
+    <input id="age" type="text">
+    <button onclick="switchEx()">Get Age</button>
+</div>
+
+
+    <script src="custom.js">
+    </script>
+</body>
